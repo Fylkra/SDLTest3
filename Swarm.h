@@ -14,6 +14,7 @@ namespace jrv
 
 	private:
 		jrv::Particle* mp_particles;
+		int lastTime;
 
 	public:
 		const jrv::Particle* const getParticles()
@@ -21,7 +22,7 @@ namespace jrv
 			return mp_particles;
 		}
 
-		void update();
+		void update(int elapsed);
 	};
 
 }

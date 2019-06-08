@@ -31,13 +31,13 @@ int main(int argc, char* argv[])
 
 	while (true)
 	{
-		Uint32 elapsed = SDL_GetTicks();
+		int elapsed = SDL_GetTicks();
 
 		// Update Particles
 
 		screen.clearScreen();
 
-		swarm.update();
+		swarm.update(elapsed);
 
 
 		//Draw Particles 

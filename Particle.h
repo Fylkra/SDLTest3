@@ -18,7 +18,7 @@ namespace jrv
 		Particle();
 		~Particle();
 		
-		void update();
+		void update(int interval);
 
 	};
 
