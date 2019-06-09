@@ -9,7 +9,7 @@ namespace jrv
 	class Screen
 	{
 	public:
-		const static int SCREEN_WIDTH = 1280;
+		const static int SCREEN_WIDTH = 1280; /* adjust for screen size */
 		const static int SCREEN_HEIGHT = 1024;
 
 	private:
@@ -19,7 +19,9 @@ namespace jrv
 
 		SDL_Texture* m_texture;
 
-		Uint32* m_buffer;
+		Uint32* m_buffer1;
+
+		Uint32* m_buffer2; // boxBlur() buffer
 
 	public:
 		Screen();
@@ -28,7 +30,8 @@ namespace jrv
 		void close();
 		void update();
 		void setPixel(int x, int y, Uint8 red, Uint8 green, Uint8 blue);
-		void clearScreen();
+		void boxBlur();
+
 
 	};
 }

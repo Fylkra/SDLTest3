@@ -10,7 +10,7 @@ namespace jrv
 	public:
 		Swarm();
 		~Swarm();
-		const static int N_PARTICLES = 5000;
+		const static int N_PARTICLES = 10000;
 
 	private:
 		jrv::Particle* mp_particles;
