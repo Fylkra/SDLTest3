@@ -11,13 +11,15 @@ namespace jrv
 		double m_x;
 		double m_y;
 
-		double randSpeed;
 
+	private:
+		double randSpeed;
 		double randDirection;
-	
+
+	public:
+
 		Particle();
 		~Particle();
-		
 		void update(int interval);
 
 	};
